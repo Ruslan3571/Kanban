@@ -1,0 +1,83 @@
+.form {
+  color: white;
+  margin-top: 40px;
+  min-height: 40px;
+  font-weight: 700;
+  background-color: #383838;
+  border: 1px solid #765cb6;
+  border-radius: 35px;
+  justify-content: center;
+  align-items: center;
+
+  &__repo {
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 18px;
+  }
+
+  &__container {
+    padding: 10px;
+    text-align: center;
+  }
+
+  &__submit {
+    background-color: #383838;
+    border: 1px solid #765cb6;
+    color: white;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  &__submit:hover,
+  input:hover {
+    box-shadow: 4px 4px 0px -1px rgba(66, 68, 90, 1);
+  }
+  ::placeholder {
+    color: white;
+  }
+}
+
+input {
+  font-size: 17px;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #383838;
+  border: 1px solid #f6f8fc;
+  color: white;
+  opacity: 70%;
+  box-shadow: inset 7px 7px 15px #8498e9;
+}
+
+.kanban {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  margin-top: 10px;
+
+  &__section {
+    width: 400px;
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 10px;
+
+    & ~ & {
+      margin-left: 10px;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 10px 0 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__content {
+      & > * ~ * {
+        margin-top: 10px;
+      }
+    }
+  }
+}
